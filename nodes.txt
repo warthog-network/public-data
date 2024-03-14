@@ -1,4 +1,6 @@
 http://193.218.118.57:3001 # pumbaa
 http://185.209.228.16:3001 # blu
+http://89.117.150.162 # blu
+http://62.72.44.89 # blu
 http://51.75.21.134:3001 # polaire
 https://node.0xf10.com  # andrew
