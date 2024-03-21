@@ -3,4 +3,4 @@ http://185.209.228.16:3001 # blu
 http://89.117.150.162:3001 # blu
 http://62.72.44.89:3001 # blu
 http://51.75.21.134:3001 # polaire
-https://node.wartscan.io/ # andrew
+https://node.wartscan.io # andrew
