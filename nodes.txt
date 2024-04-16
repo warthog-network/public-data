@@ -7,3 +7,6 @@ https://node.wartscan.io # andrew
 https://us.node-s.com:3001 # johnnyb US node
 https://eu.node-s.com:3001 # johnnyb EU node
 https://dev.node-s.com:3001 # johnnyb dev (last pre-release) node
+http://cluster.node-s.com:3001 #johnnyb cluster of 20 nodes
+
+WARNING : Public nodes are provided by community members. You can use each node for different wallets. However, we advise users against mining through public nodes.
