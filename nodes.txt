@@ -4,8 +4,6 @@ http://89.117.150.162:3001 # blu & Central US
 http://62.72.44.89:3001 # blu & Asia
 http://51.75.21.134:3001 # polaire
 https://node.wartscan.io # andrew
-http://us.node-s.com:3001 # johnnyb US node
-http://eu.node-s.com:3001 # johnnyb EU node
-http://dev.node-s.com:3001 # johnnyb dev (last pre-release) node
+http://dev.node-s.com:3001 # johnnyb Us East
 
 WARNING : Public nodes are provided by community members. You can use each node for different wallets. However, we advise users against mining through public nodes.
