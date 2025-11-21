@@ -2,7 +2,7 @@ http://65.87.7.86:3001 # pumbaa
 http://185.209.228.16:3001 # blu & EU
 http://89.117.150.162:3001 # blu & Central US
 http://62.72.44.89:3001 # blu & Asia
-http://51.75.21.134:3001 # polaire
+http://217.182.64.43:3001 # polaire
 https://node.wartscan.io # andrew
 http://dev.node-s.com:3001 # johnnyb Us East
 
