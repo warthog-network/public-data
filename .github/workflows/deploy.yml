@@ -55,8 +55,6 @@ jobs:
         run: |
           git checkout --orphan gh-pages
           git rm -rf .
-          cp nodes.json nodes.json
-          cp addresses.json addresses.json
           git add nodes.json addresses.json
           git commit -m "Deploy JSON $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push origin gh-pages --force
