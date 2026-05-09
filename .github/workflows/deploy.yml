@@ -67,6 +67,7 @@ jobs:
         run: |
           git checkout --orphan gh-pages
           git rm -rf .
-          git add legacy-nodes.json defi-nodes.json addresses.json
+          cp "${{ github.workspace }}/index.html" .
+          git add index.html legacy-nodes.json defi-nodes.json addresses.json
           git commit -m "Deploy JSON $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push origin gh-pages --force
