@@ -1,0 +1,90 @@
+manufacturer,model,hashrate mh/s
+AMD,6800 XT (TUF),1400
+AMD,RX 550,79
+AMD,RX 5700 XT,617
+AMD,RX 580,517
+AMD,RX 580,535
+AMD,RX 6600 XT,1000
+AMD,RX 7800 XT,2200
+AMD,Radeon 780M,308
+Intel,Arc A770 BiFrost,1600
+Intel,Arc A770 BiFrost,1900
+Intel,Arc A770 LE,1600
+Nvidia,RTX A2000,650
+Nvidia,RTX A5000 (2x),3400
+Nvidia,CMP 70HX,800
+Nvidia,CMP 90HX (2x),3600
+Nvidia,GTX 1060,347
+Nvidia,GTX 1080,700
+Nvidia,GTX 1650,320
+Nvidia,GTX 1660 Super,504
+Nvidia,GTX 1660 Ti Max-Q,450
+Nvidia,GTX 1660 Ti,450
+Nvidia,GTX 1660 super,507.5
+Nvidia,Quadro M2000M,111
+Nvidia,Quadro P6 (2x),780
+Nvidia,Quadro RTX4000,831
+Nvidia,RTX 2060,642
+Nvidia,RTX 2060,650
+Nvidia,RTX 2060 Super,825
+Nvidia,RTX 2080 Super,1200
+Nvidia,RTX 2080 Super,1500
+Nvidia,RTX 3060 (3x),2750
+Nvidia,RTX 3060 Ti (2x),1489
+Nvidia,RTX 3060 Ti (2x),1785
+Nvidia,RTX 3060 Ti (2x),1934.4
+Nvidia,RTX 3060 Ti (2x),2500
+Nvidia,RTX 3060 Ti (ASUS Dual Mini),915.2
+Nvidia,RTX 3060 Ti Dual OC (ASUS),1200
+Nvidia,RTX 3060 Ti,1200
+Nvidia,RTX 3060 Ti,1300
+Nvidia,RTX 3060 Ti,1400
+Nvidia,RTX 3060 XC (EVGA),775
+Nvidia,RTX 3060 XC (EVGA),892
+Nvidia,RTX 3060 XC (EVGA),900
+Nvidia,RTX 3060,681
+Nvidia,RTX 3060,840
+Nvidia,RTX 3060,950
+Nvidia,RTX 3070 (2x),3000
+Nvidia,RTX 3070 (3x),4500
+Nvidia,RTX 3070 (4x),5200
+Nvidia,RTX 3070 (MSI GAMING X TRIO),420
+Nvidia,RTX 3070 Ti (2x),3200
+Nvidia,RTX 3070 Ti,1500
+Nvidia,RTX 3070,1300
+Nvidia,RTX 3070,1500
+Nvidia,RTX 3080 (2x),4400
+Nvidia,RTX 3080 (2x),5000
+Nvidia,RTX 3080 (Xtreme Waterforce),1500
+Nvidia,RTX 3080 Ti,2500
+Nvidia,RTX 3080,1600
+Nvidia,RTX 3080,1900
+Nvidia,RTX 3080,2200
+Nvidia,RTX 3090 (2x),2600
+Nvidia,RTX 3090 (5x),5900
+Nvidia,RTX 3090 Ti,2800
+Nvidia,RTX 3090,2100
+Nvidia,RTX 3090,2600
+Nvidia,RTX 4000 SFF Ada,1300
+Nvidia,RTX 4060,1100
+Nvidia,RTX 4060 Ti (2x),3000
+Nvidia,RTX 4060 Ti,1500
+Nvidia,RTX 4070,2000
+Nvidia,RTX 4070 Super,2200
+Nvidia,RTX 4070 Super,2500
+Nvidia,RTX 4070 Super (2x),5400
+Nvidia,RTX 4070 Ti,2800
+Nvidia,RTX 4070 Ti,3000
+Nvidia,RTX 4070 Ti,3200
+Nvidia,RTX 4070 Ti (2x),5600
+Nvidia,RTX 4080 (2x),7000
+Nvidia,RTX 4080 Super,3700
+Nvidia,RTX 4080 Super,3800
+Nvidia,RTX 4080,3500
+Nvidia,RTX 4080,3800
+Nvidia,RTX 4090,4100
+Nvidia,RTX 4090,4600
+Nvidia,RTX 4090,4700
+Nvidia,RTX 4090,5000
+Nvidia,RTX 4090,5500
+Nvidia,RTX 4090,6100

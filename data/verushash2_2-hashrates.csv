@@ -1,0 +1,131 @@
+manufacturer,model,hashrate mh/s
+AMD,EPYC 7K62 (48/96),90.60
+AMD,Epyc 7532,50
+AMD,Epyc 7642 (2x),120.13
+AMD,Epyc 7742 (2x),123.11
+AMD,Epyc 7742,82
+AMD,Epyc 7742,92.8
+AMD,Epyc 7K62,83.5
+AMD,Epyc 7V12,97
+AMD,Epyc 9654,184
+AMD,Ryzen 5 1600,8.71
+AMD,Ryzen 5 1600,10.3
+AMD,Ryzen 5 1600,6.3
+AMD,Ryzen 5 1600X,9.2
+AMD,Ryzen 5 2600,13.00
+AMD,Ryzen 5 2600,13.30
+AMD,Ryzen 5 3600,12
+AMD,Ryzen 5 5500,12.43
+AMD,Ryzen 5 5600X,10
+AMD,Ryzen 5 5600X,13.5
+AMD,Ryzen 5 5800,23.00
+AMD,Ryzen 7 3700X,18
+AMD,Ryzen 7 4800H,18
+AMD,Ryzen 7 5700,21.50
+AMD,Ryzen 7 5700,21.50
+AMD,Ryzen 7 5800X,18.5
+AMD,Ryzen 7 5800X,19.5
+AMD,Ryzen 7 7700,26.70
+AMD,Ryzen 7 7800X3D,15.88
+AMD,Ryzen 7 7800X3D,16.3
+AMD,Ryzen 7 8845HS,15.8
+AMD,Ryzen 7 9700X,26
+AMD,Ryzen 9 3900X,21.45
+AMD,Ryzen 9 3900X,23.12
+AMD,Ryzen 9 3900X,23.6
+AMD,Ryzen 9 3900X,24.04
+AMD,Ryzen 9 3900X,24.4
+AMD,Ryzen 9 3900X,24.56
+AMD,Ryzen 9 3900X,24.7
+AMD,Ryzen 9 3900X,25.6
+AMD,Ryzen 9 3900XT,24.6
+AMD,Ryzen 9 3950X,28.1
+AMD,Ryzen 9 3950X,30.00
+AMD,Ryzen 9 3950X,36.8
+AMD,Ryzen 9 3950X,36.8
+AMD,Ryzen 9 3950X,39.50
+AMD,Ryzen 9 5900X,26.58
+AMD,Ryzen 9 5900X,28
+AMD,Ryzen 9 5900X,28
+AMD,Ryzen 9 5900X,30.00
+AMD,Ryzen 9 5900X,32.4
+AMD,Ryzen 9 5950X,36.35
+AMD,Ryzen 9 5950X,37
+AMD,Ryzen 9 5950X,37.5
+AMD,Ryzen 9 5950X,38.00
+AMD,Ryzen 9 5950X,39.04
+AMD,Ryzen 9 5950X,39.40
+AMD,Ryzen 9 5950X,40.62
+AMD,Ryzen 9 7900X,27.29
+AMD,Ryzen 9 7900X3D,34
+AMD,Ryzen 9 7950X,36.76
+AMD,Ryzen 9 7950X,37.01
+AMD,Ryzen 9 7950X,43
+AMD,Ryzen 9 7950X,43
+AMD,Ryzen 9 7950X,44.63
+AMD,Ryzen 9 7950X,45.9
+AMD,Ryzen 9 7950X,46.8
+AMD,Ryzen 9 7950X,46.96
+AMD,Ryzen 9 7950X,47.46
+AMD,Ryzen 9 7950X,48.00
+AMD,Ryzen 9 7950X,49.4
+AMD,Ryzen 9 7950X,49.59
+AMD,Ryzen 9 7950X,50
+AMD,Ryzen 9 7950X,51.50
+AMD,Ryzen 9 7950X,53.4
+AMD,Ryzen 9 7950X3D,45
+AMD,Ryzen 9 7950X3D,47.00
+AMD,Ryzen Threadripper 2950X,30.00
+Intel,Core i5-12400F,14.6
+Intel,Core i5-13500,18
+Intel,Core i5-13600K,30
+Intel,Core i5-10300H,6
+Intel,Core i5-10400,12.00
+Intel,Core i5-10400,9
+Intel,Core i5-11600,13.90
+Intel,Core i5-12400,13.50
+Intel,Core i5-9600K,5.49
+Intel,Core i5-9600K,6
+Intel,Core i5-9600K,7.4
+Intel,Core i7-10700,18.70
+Intel,Core i7-10700F,15.3
+Intel,Core i7-10700F,16.1
+Intel,Core i7-10700F,16.1
+Intel,Core i7-12600,21.50
+Intel,Core i7-12600,23.00
+Intel,Core i7-14700F,34
+Intel,Core i7-6820HQ,4.76
+Intel,Core i7-8700K,8.4
+Intel,Core i9-12900K,26.09
+Intel,Core i9-12900K,28.14
+Intel,E5-2697v2 (2x),25.58
+Intel,Xeon 6252N (2x),60.00
+Intel,Xeon E5-2630v4,11.24
+Intel,Xeon E5-2666,14.98
+Intel,Xeon E5-2670 (2x),30.50
+Intel,Xeon E5-2670,10.00
+Intel,Xeon E5-2673v4 (2x),47.80
+Intel,Xeon E5-2680 (2x),33.00
+Intel,Xeon E5-2680 (2x),37.00
+Intel,Xeon E5-2680 (2x),38.00
+Intel,Xeon E5-2680 (2x),40.50
+Intel,Xeon E5-2680,20.00
+Intel,Xeon E5-2682 (2x),28.50
+Intel,Xeon E5-2682 (2x),46.20
+Intel,Xeon E5-2683 (2x),42.00
+Intel,Xeon E5-2683,25.00
+Intel,Xeon E5-2684 (2x),45.00
+Intel,Xeon E5-2686 (2x),42.50
+Intel,Xeon E5-2686,24.50
+Intel,Xeon E5-2690 (2x),45.00
+Intel,Xeon E5-2690,22.40
+Intel,Xeon E5-2695,23.30
+Intel,Xeon E5-2696 (2x),48.00
+Intel,Xeon E5-2696 (HT/off) (2x),34.50
+Intel,Xeon E5-2696,20.00
+Intel,Xeon E5-2696,24.00
+Intel,Xeon E5-2697 (2x),50.50
+Intel,Xeon E5-2697,25.00
+Intel,Xeon E5-2698,26.40
+Intel,Xeon E5-2699 (2x),45.00
+Intel,Xeon E5-2699 (2x),60.00

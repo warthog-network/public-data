@@ -11,6 +11,8 @@ The public nodes are run by the community. You are welcome to add your node to h
 - [data/legacy-nodes.csv](data/legacy-nodes.csv) - Legacy public node URLs and owners
 - [data/defi-nodes.csv](data/defi-nodes.csv) - DeFi public node URLs and owners
 - [data/addresses.csv](data/addresses.csv) - WART address tags
+- [data/sha256t-hashrates.csv](data/sha256t-hashrates.csv) - GPU hashrates for Janushash
+- [data/verushash2_2-hashrates.csv](data/verushash2_2-hashrates.csv) - CPU hashrates for Janushash
 
 ## API Endpoints
 
@@ -49,6 +51,20 @@ Once deployed, the following JSON endpoints are available:
   ]
 }
 ```
+
+## Janushash Algorithm
+
+Janushash combines GPU (sha256t) and CPU (verushash2_2) hashrates using the formula:
+
+```
+Janusscore = round(gpu * 10 * ((0.005 + cpu/gpu)^0.3 - 0.005^0.3) / 3)
+```
+
+Where:
+- `gpu` = sha256t hashrate (mh/s)
+- `cpu` = verushash hashrate (mh/s)
+
+An interactive calculator is available at the root URL.
 
 ## Contributing
 
