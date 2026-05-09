@@ -17,20 +17,32 @@ jobs:
           python3 << 'EOF'
           import csv
           import json
-          import os
 
-          # Convert nodes.csv to nodes.json
-          nodes = []
-          with open('data/nodes.csv', 'r') as f:
+          # Convert legacy-nodes.csv to legacy-nodes.json
+          legacy_nodes = []
+          with open('data/legacy-nodes.csv', 'r') as f:
               reader = csv.DictReader(f)
               for row in reader:
-                  nodes.append({
+                  legacy_nodes.append({
                       'url': row['url'],
                       'owner': row['owner']
                   })
 
-          with open('nodes.json', 'w') as f:
-              json.dump({'nodes': nodes}, f, indent=2)
+          with open('legacy-nodes.json', 'w') as f:
+              json.dump({'nodes': legacy_nodes}, f, indent=2)
+
+          # Convert defi-nodes.csv to defi-nodes.json
+          defi_nodes = []
+          with open('data/defi-nodes.csv', 'r') as f:
+              reader = csv.DictReader(f)
+              for row in reader:
+                  defi_nodes.append({
+                      'url': row['url'],
+                      'owner': row['owner']
+                  })
+
+          with open('defi-nodes.json', 'w') as f:
+              json.dump({'nodes': defi_nodes}, f, indent=2)
 
           # Convert addresses.csv to addresses.json
           addresses = []
@@ -55,6 +67,6 @@ jobs:
         run: |
           git checkout --orphan gh-pages
           git rm -rf .
-          git add nodes.json addresses.json
+          git add legacy-nodes.json defi-nodes.json addresses.json
           git commit -m "Deploy JSON $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push origin gh-pages --force

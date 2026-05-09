@@ -4,7 +4,8 @@
 
 ## Data Files
 
-- `data/nodes.csv` - Public node URLs and owners
+- `data/legacy-nodes.csv` - Legacy public node URLs and owners
+- `data/defi-nodes.csv` - DeFi public node URLs and owners
 - `data/addresses.csv` - WART addresses with tags
 
 ## API Endpoints
@@ -13,18 +14,26 @@ Once deployed, the following JSON endpoints are available:
 
 | Endpoint | Description |
 |----------|-------------|
-| `/nodes.json` | Public nodes with URL and owner |
+| `/legacy-nodes.json` | Legacy public nodes with URL and owner |
+| `/defi-nodes.json` | DeFi public nodes with URL and owner |
 | `/addresses.json` | WART addresses with tags |
 
 ### Example Response
 
-**GET /nodes.json**
+**GET /legacy-nodes.json**
 ```json
 {
   "nodes": [
     {"url": "http://65.87.7.86:3001", "owner": "pumbaa"},
     {"url": "http://185.209.228.16:3001", "owner": "blu & EU"}
   ]
+}
+```
+
+**GET /defi-nodes.json**
+```json
+{
+  "nodes": []
 }
 ```
 
