@@ -8,79 +8,15 @@ The public nodes are run by the community. You are welcome to add your node to h
 
 ## Data Files
 
-- [data/legacy-nodes.csv](data/legacy-nodes.csv) - Legacy public node URLs and owners
-- [data/defi-nodes.csv](data/defi-nodes.csv) - DeFi public node URLs and owners
-- [data/addresses.csv](data/addresses.csv) - WART address tags
-- [data/sha256t-hashrates.csv](data/sha256t-hashrates.csv) - GPU hashrates for Janushash
-- [data/verushash2_2-hashrates.csv](data/verushash2_2-hashrates.csv) - CPU hashrates for Janushash
+The following data files are exported to API endpoints on [data.warthog.network](https://data.warthog.network:
 
-## API Endpoints
-
-Once deployed, the following JSON endpoints are available:
-
-| Endpoint | Description |
-|----------|-------------|
-| `/legacy-nodes.json` | Legacy public nodes with URL and owner |
-| `/defi-nodes.json` | DeFi public nodes with URL and owner |
-| `/addresses.json` | WART address tags |
-| `/sha256t-hashrates.json` | GPU hashrates for Janushash |
-| `/verushash2_2-hashrates.json` | CPU hashrates for Janushash |
-
-### Example Response
-
-**GET /legacy-nodes.json**
-```json
-{
-  "nodes": [
-    {"url": "http://65.87.7.86:3001", "owner": "pumbaa"},
-    {"url": "http://185.209.228.16:3001", "owner": "blu & EU"}
-  ]
-}
-```
-
-**GET /defi-nodes.json**
-```json
-{
-  "nodes": []
-}
-```
-
-**GET /addresses.json**
-```json
-{
-  "addresses": [
-    {"address": "95ae6efb2f4fe5e4fd3a5b21df7f755f878383610505fe64", "tag": "Herominers"}
-  ]
-}
-```
-
-**GET /sha256t-hashrates.json**
-```json
-[
-  {"manufacturer": "AMD", "model": "6800 XT (TUF)", "hashrate_mh_s": 1400.0}
-]
-```
-
-**GET /verushash2_2-hashrates.json**
-```json
-[
-  {"manufacturer": "AMD", "model": "EPYC 7K62 (48/96)", "hashrate_mh_s": 90.6}
-]
-```
-
-## Janushash Algorithm
-
-Janushash combines GPU (sha256t) and CPU (verushash2_2) hashrates using the formula:
-
-```
-Janusscore = round(gpu * 10 * ((0.005 + cpu/gpu)^0.3 - 0.005^0.3) / 3)
-```
-
-Where:
-- `gpu` = sha256t hashrate (mh/s)
-- `cpu` = verushash hashrate (mh/s)
-
-An interactive calculator is available at the root URL.
+| File | Exported Endpoint | Description |
+|------|-------------------|-------------|
+| [data/legacy-nodes.csv](data/legacy-nodes.csv) | [/legacy-nodes.json](https://data.warthog.network/legacy-nodes.json) | Legacy public node URLs
+| [data/defi-nodes.csv](data/defi-nodes.csv) | [/defi-nodes.json](https://data.warthog.network/defi-nodes.json) | DeFi public node URLs
+| [data/addresses.csv](data/addresses.csv) | [/addresses.json](https://data.warthog.network/addresses.json) | WART address tags
+| [data/sha256t-hashrates.csv](data/sha256t-hashrates.csv) | [/sha256t-hashrates.json](https://data.warthog.network/sha256t-hashrates.json) | GPU hashrates for Janushash
+| [data/verushash2_2-hashrates.csv](data/verushash2_2-hashrates.csv) | [/verushash2_2-hashrates.json](https://data.warthog.network/verushash2_2-hashrates.json) | CPU hashrates for Janushash
 
 ## Contributing
 
