@@ -8,9 +8,9 @@ The public nodes are run by the community. You are welcome to add your node to h
 
 ## Data Files
 
-- `data/legacy-nodes.csv` - Legacy public node URLs and owners
-- `data/defi-nodes.csv` - DeFi public node URLs and owners
-- `data/addresses.csv` - WART address tags
+- [data/legacy-nodes.csv](data/legacy-nodes.csv) - Legacy public node URLs and owners
+- [data/defi-nodes.csv](data/defi-nodes.csv) - DeFi public node URLs and owners
+- [data/addresses.csv](data/addresses.csv) - WART address tags
 
 ## API Endpoints
 
