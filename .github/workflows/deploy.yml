@@ -66,9 +66,11 @@ jobs:
       - name: Commit JSON files
         run: |
           cp index.html /tmp/index.html
+          cp CNAME /tmp/CNAME
           git checkout --orphan gh-pages
           git rm -rf .
           cp /tmp/index.html .
-          git add index.html legacy-nodes.json defi-nodes.json addresses.json
+          cp /tmp/CNAME .
+          git add index.html CNAME legacy-nodes.json defi-nodes.json addresses.json
           git commit -m "Deploy JSON $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push origin gh-pages --force
