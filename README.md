@@ -3,6 +3,7 @@
 This repository is a collection of public data on Warthog, including:
 - Public nodes for wallet usage without running your own node
 - Address tag information
+- Hashrates from the community ([google sheets](https://docs.google.com/spreadsheets/d/1cQqlGm0wrrnlcPfjf0Cbsp-WEmtVAqVK_btHhbnhWao/) and [this post](https://telegra.ph/Sochetanie-hehshrejtov-CPUGPU-Warthog-mnogo-Xeonov-iz-moego-opyta-11-26)).
 
 The public nodes are run by the community. You are welcome to add your node to help the network.
 
