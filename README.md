@@ -1,6 +1,10 @@
-# Warthog Public Nodes
+# Warthog Public Data
 
-**WARNING**: Public nodes are provided by community members. You can use each node for different wallets. However, we advise users against mining through public nodes.
+This repository is a collection of public data on Warthog, including:
+- Public nodes for wallet usage without running your own node
+- Address tag information
+
+The public nodes are run by the community. You are welcome to add your node to help the network.
 
 ## Data Files
 
