@@ -25,7 +25,7 @@ jobs:
               for row in reader:
                   legacy_nodes.append({
                       'url': row['url'],
-                      'owner': row['owner']
+                      'name': row['name']
                   })
 
           with open('legacy-nodes.json', 'w') as f:
@@ -38,7 +38,7 @@ jobs:
               for row in reader:
                   defi_nodes.append({
                       'url': row['url'],
-                      'owner': row['owner']
+                      'name': row['name']
                   })
 
           with open('defi-nodes.json', 'w') as f:

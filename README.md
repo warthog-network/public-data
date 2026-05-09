@@ -30,7 +30,7 @@ Discussion: https://discord.com/invite/QMDV8bGTdQ
 2. Edit the relevant CSV file in `data/`:
    - `legacy-nodes.csv` - for legacy nodes
    - `defi-nodes.csv` - for DeFi nodes
-3. Add a new line: `url,owner,comment`
+3. Add a new line: `url,name,comment`
 4. Submit a PR to `master`
 
 ### Adding an Address Tag
