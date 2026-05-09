@@ -56,6 +56,34 @@ jobs:
 
           with open('addresses.json', 'w') as f:
               json.dump({'addresses': addresses}, f, indent=2)
+
+          # Convert sha256t-hashrates.csv to sha256t-hashrates.json
+          gpu_hashes = []
+          with open('data/sha256t-hashrates.csv', 'r') as f:
+              reader = csv.DictReader(f)
+              for row in reader:
+                  gpu_hashes.append({
+                      'manufacturer': row['manufacturer'],
+                      'model': row['model'],
+                      'hashrate_mh_s': float(row['hashrate mh/s'])
+                  })
+
+          with open('sha256t-hashrates.json', 'w') as f:
+              json.dump(gpu_hashes, f, indent=2)
+
+          # Convert verushash2_2-hashrates.csv to verushash2_2-hashrates.json
+          cpu_hashes = []
+          with open('data/verushash2_2-hashrates.csv', 'r') as f:
+              reader = csv.DictReader(f)
+              for row in reader:
+                  cpu_hashes.append({
+                      'manufacturer': row['manufacturer'],
+                      'model': row['model'],
+                      'hashrate_mh_s': float(row['hashrate mh/s'])
+                  })
+
+          with open('verushash2_2-hashrates.json', 'w') as f:
+              json.dump(cpu_hashes, f, indent=2)
           EOF
 
       - name: Setup Git
@@ -71,6 +99,6 @@ jobs:
           git rm -rf .
           cp /tmp/index.html .
           cp /tmp/CNAME .
-          git add index.html CNAME legacy-nodes.json defi-nodes.json addresses.json
+          git add index.html CNAME legacy-nodes.json defi-nodes.json addresses.json sha256t-hashrates.json verushash2_2-hashrates.json
           git commit -m "Deploy JSON $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push origin gh-pages --force

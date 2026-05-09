@@ -23,6 +23,8 @@ Once deployed, the following JSON endpoints are available:
 | `/legacy-nodes.json` | Legacy public nodes with URL and owner |
 | `/defi-nodes.json` | DeFi public nodes with URL and owner |
 | `/addresses.json` | WART address tags |
+| `/sha256t-hashrates.json` | GPU hashrates for Janushash |
+| `/verushash2_2-hashrates.json` | CPU hashrates for Janushash |
 
 ### Example Response
 
@@ -50,6 +52,20 @@ Once deployed, the following JSON endpoints are available:
     {"address": "95ae6efb2f4fe5e4fd3a5b21df7f755f878383610505fe64", "tag": "Herominers"}
   ]
 }
+```
+
+**GET /sha256t-hashrates.json**
+```json
+[
+  {"manufacturer": "AMD", "model": "6800 XT (TUF)", "hashrate_mh_s": 1400.0}
+]
+```
+
+**GET /verushash2_2-hashrates.json**
+```json
+[
+  {"manufacturer": "AMD", "model": "EPYC 7K62 (48/96)", "hashrate_mh_s": 90.6}
+]
 ```
 
 ## Janushash Algorithm
