@@ -12,11 +12,33 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v4
 
-      - name: Convert CSVs to JSON
+      - name: Convert CSVs and validate assets to JSON
         run: |
           python3 << 'EOF'
           import csv
           import json
+          import os
+          import shutil
+          import sys
+
+          def validate_asset(asset_path, asset_hash):
+              """Validate asset directory structure and info.json"""
+              info_path = os.path.join(asset_path, 'info.json')
+              if not os.path.exists(info_path):
+                  return False, f"{asset_hash}: info.json not found"
+
+              try:
+                  with open(info_path, 'r') as f:
+                      data = json.load(f)
+              except json.JSONDecodeError:
+                  return False, f"{asset_hash}: invalid JSON"
+
+              required_fields = ['name', 'ticker', 'description']
+              for field in required_fields:
+                  if field not in data or not data[field]:
+                      return False, f"{asset_hash}: missing required field '{field}'"
+
+              return True, None
 
           # Convert legacy-nodes.csv to legacy-nodes.json
           legacy_nodes = []
@@ -84,6 +106,40 @@ jobs:
 
           with open('verushash2_2-hashrates.json', 'w') as f:
               json.dump(cpu_hashes, f, indent=2)
+
+          # Process assets
+          assets_dir = 'data/assets'
+          assets_list = []
+
+          if os.path.exists(assets_dir):
+              for asset_hash in os.listdir(assets_dir):
+                  asset_src = os.path.join(assets_dir, asset_hash)
+                  if not os.path.isdir(asset_src):
+                      continue
+
+                  # Validate asset
+                  valid, error = validate_asset(asset_src, asset_hash)
+                  if not valid:
+                      print(f"ERROR: {error}")
+                      sys.exit(1)
+
+                  # Copy asset to assets/{hash}/
+                  asset_dest = os.path.join('assets', asset_hash)
+                  shutil.copytree(asset_src, asset_dest)
+
+                  # Read info.json for assets.json
+                  info_path = os.path.join(asset_dest, 'info.json')
+                  with open(info_path, 'r') as f:
+                      data = json.load(f)
+                  assets_list.append({
+                      'hash': asset_hash,
+                      'name': data['name'],
+                      'ticker': data['ticker']
+                  })
+
+          # Generate assets.json
+          with open('assets.json', 'w') as f:
+              json.dump(assets_list, f, indent=2)
           EOF
 
       - name: Setup Git
@@ -99,6 +155,6 @@ jobs:
           git rm -rf .
           cp /tmp/index.html .
           cp /tmp/CNAME .
-          git add index.html CNAME legacy-nodes.json defi-nodes.json addresses.json sha256t-hashrates.json verushash2_2-hashrates.json
+          git add index.html CNAME legacy-nodes.json defi-nodes.json addresses.json sha256t-hashrates.json verushash2_2-hashrates.json assets.json assets/
           git commit -m "Deploy JSON $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           git push origin gh-pages --force
