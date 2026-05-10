@@ -1,0 +1,20 @@
+{
+  "nodes": [
+    {
+      "url": "http://65.87.7.86:3001",
+      "name": "Official 1"
+    },
+    {
+      "url": "http://217.182.64.43:3001",
+      "name": "Official 2"
+    },
+    {
+      "url": "https://warthognode.duckdns.org",
+      "name": "Official 3"
+    },
+    {
+      "url": "https://node.wartscan.io",
+      "name": "Dead 1"
+    }
+  ]
+}

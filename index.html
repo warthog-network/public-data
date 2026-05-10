@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Warthog Public Data API</title>
+</head>
+<body>
+    <h1>Warthog Public Data API</h1>
+    <h2>Endpoints</h2>
+    <ul>
+        <li><a href="/legacy-nodes.json">/legacy-nodes.json</a> - Legacy public nodes</li>
+        <li><a href="/defi-nodes.json">/defi-nodes.json</a> - DeFi public nodes</li>
+        <li><a href="/addresses.json">/addresses.json</a> - WART address tags</li>
+        <li><a href="/sha256t-hashrates.json">/sha256t-hashrates.json</a> - GPU hashrates</li>
+        <li><a href="/verushash2_2-hashrates.json">/verushash2_2-hashrates.json</a> - CPU hashrates</li>
+        <li><a href="/assets.json">/assets.json</a> - Asset list for autocompletion (hash, name, ticker)</li>
+        <li><a href="/assets/0000000000000000000000000000000000000000000000000000000000000000/info.json">/assets/{hash}/info.json</a> - Asset metadata</li>
+    </ul>
+
+    <h2>Janushash Calculator</h2>
+    <p>Janushash is Warthog's combined GPU+CPU hashing algorithm. It blends sha256t (GPU) and verushash2_2 (CPU) hashrates.</p>
+        <p><strong>Formula:</strong> <code>Janusscore = round(gpu * 10 * ((0.005 + cpu/gpu)^0.3 - 0.005^0.3) / 3)</code>, see <a href="https://docs.warthog.network/unique-features/janushash/analysis/janusscore/">here</a> for reference.</p>
+
+    <div>
+        <label for="gpu_select">GPU (sha256t):</label>
+        <select id="gpu_select">
+            <option value="custom">Custom</option>
+        </select>
+        <input type="text" id="gpu_input" placeholder="Custom hashrate">
+        <label>mh/s</label>
+    </div>
+
+    <div>
+        <label for="cpu_select">CPU (verushash2_2):</label>
+        <select id="cpu_select">
+            <option value="custom">Custom</option>
+        </select>
+        <input type="text" id="cpu_input" placeholder="Custom hashrate">
+        <label>mh/s</label>
+    </div>
+
+    <p><strong>Janusscore:</strong> <span id="janusscore">-</span> mh/s</p>
+
+    <script>
+        const gpuSelect = document.getElementById('gpu_select');
+        const cpuSelect = document.getElementById('cpu_select');
+        const gpuInput = document.getElementById('gpu_input');
+        const cpuInput = document.getElementById('cpu_input');
+        const janusscore = document.getElementById('janusscore');
+
+        async function loadHashrates() {
+            const [gpuRes, cpuRes] = await Promise.all([
+                fetch('/sha256t-hashrates.json'),
+                fetch('/verushash2_2-hashrates.json')
+            ]);
+
+            const gpuData = await gpuRes.json();
+            const cpuData = await cpuRes.json();
+
+            gpuData.forEach(gpu => {
+                const opt = document.createElement('option');
+                opt.value = gpu.hashrate_mh_s;
+                opt.textContent = `${gpu.manufacturer} ${gpu.model}, ${gpu.hashrate_mh_s}mh/s`;
+                gpuSelect.appendChild(opt);
+            });
+
+            cpuData.forEach(cpu => {
+                const opt = document.createElement('option');
+                opt.value = cpu.hashrate_mh_s;
+                opt.textContent = `${cpu.manufacturer} ${cpu.model}, ${cpu.hashrate_mh_s}mh/s`;
+                cpuSelect.appendChild(opt);
+            });
+        }
+
+        gpuSelect.addEventListener('change', () => {
+            gpuInput.disabled = gpuSelect.value !== 'custom';
+            if (gpuSelect.value !== 'custom') {
+                gpuInput.value = gpuSelect.value;
+            }
+            calcJanus();
+        });
+
+        cpuSelect.addEventListener('change', () => {
+            cpuInput.disabled = cpuSelect.value !== 'custom';
+            if (cpuSelect.value !== 'custom') {
+                cpuInput.value = cpuSelect.value;
+            }
+            calcJanus();
+        });
+
+        gpuInput.addEventListener('input', calcJanus);
+        cpuInput.addEventListener('input', calcJanus);
+
+        function calcJanus() {
+            const gpu = Number(gpuInput.value);
+            const cpu = Number(cpuInput.value);
+            if (gpu > 0 && cpu > 0) {
+                const result = Math.round(gpu * 10 * ((0.005 + cpu/gpu)**0.3 - 0.005**0.3) / 3);
+                janusscore.textContent = result;
+            } else {
+                janusscore.textContent = '-';
+            }
+        }
+
+        loadHashrates();
+    </script>
+</body>
+</html>
