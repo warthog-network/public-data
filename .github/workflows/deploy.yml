@@ -46,8 +46,8 @@ jobs:
               reader = csv.DictReader(f)
               for row in reader:
                   legacy_nodes.append({
-                      'url': row['url'],
-                      'name': row['name']
+                      'url': row['url'].strip(),
+                      'name': row['name'].strip()
                   })
 
           with open('legacy-nodes.json', 'w') as f:
@@ -59,8 +59,8 @@ jobs:
               reader = csv.DictReader(f)
               for row in reader:
                   defi_nodes.append({
-                      'url': row['url'],
-                      'name': row['name']
+                      'url': row['url'].strip(),
+                      'name': row['name'].strip()
                   })
 
           with open('defi-nodes.json', 'w') as f:
@@ -72,8 +72,8 @@ jobs:
               reader = csv.DictReader(f)
               for row in reader:
                   addresses.append({
-                      'address': row['address'],
-                      'tag': row['tag']
+                      'address': row['address'].strip(),
+                      'tag': row['tag'].strip()
                   })
 
           with open('addresses.json', 'w') as f:
@@ -85,9 +85,9 @@ jobs:
               reader = csv.DictReader(f)
               for row in reader:
                   gpu_hashes.append({
-                      'manufacturer': row['manufacturer'],
-                      'model': row['model'],
-                      'hashrate_mh_s': float(row['hashrate mh/s'])
+                      'manufacturer': row['manufacturer'].strip(),
+                      'model': row['model'].strip(),
+                      'hashrate_mh_s': float(row['hashrate mh/s'].strip())
                   })
 
           with open('sha256t-hashrates.json', 'w') as f:
@@ -99,9 +99,9 @@ jobs:
               reader = csv.DictReader(f)
               for row in reader:
                   cpu_hashes.append({
-                      'manufacturer': row['manufacturer'],
-                      'model': row['model'],
-                      'hashrate_mh_s': float(row['hashrate mh/s'])
+                      'manufacturer': row['manufacturer'].strip(),
+                      'model': row['model'].strip(),
+                      'hashrate_mh_s': float(row['hashrate mh/s'].strip())
                   })
 
           with open('verushash2_2-hashrates.json', 'w') as f:
