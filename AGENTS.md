@@ -20,7 +20,7 @@ The JSON served from `data.warthog.network` is the **canonical source of truth**
 | `sha256t-hashrates.json` | `data/sha256t-hashrates.csv` | `[{manufacturer, model, hashrate_mh_s}, ...]` |
 | `verushash2_2-hashrates.json` | `data/verushash2_2-hashrates.csv` | `[{manufacturer, model, hashrate_mh_s}, ...]` |
 | `assets.json` | `data/assets/` directories | `[{hash, name, ticker}, ...]` |
-| `assets/<hash>/info.json` | `data/assets/<hash>/info.json` | `{name, ticker, description, url?}` |
+| `assets/<hash>/info.json` | `data/assets/<hash>/info.json` | `{hash, name, ticker, description, website?, telegram?, discord?, twitter?}` |
 
 The endpoint list is mirrored in HUB.md — if you add/remove an endpoint, update both.
 
@@ -79,8 +79,9 @@ data/
   sha256t-hashrates.csv    # GPU hashrates for Janushash
   verushash2_2-hashrates.csv # CPU hashrates for Janushash
   assets/<64-hex-hash>/
-    info.json              # required: name, ticker, description; optional: url
-    image.png              # optional, must be valid PNG
+    info.json              # required: hash, name, ticker, description; optional: website, telegram, discord, twitter
+    logo.<ext>            # optional, image/png or image/jpeg, exactly 250x250 px
+    banner.<ext>          # optional, image/png or image/jpeg, exactly 600x200 px
 index.html                 # landing page + Janushash calculator
 CNAME                      # data.warthog.network (do not delete or rename)
 .github/workflows/deploy.yml
@@ -98,7 +99,7 @@ CNAME                      # data.warthog.network (do not delete or rename)
 
 ## Assets
 
-- Each asset directory must be named with the full 64-hex-character asset hash and must contain `info.json` with non-empty `name`, `ticker` (max 5 chars per README), `description`; `url` is optional.
+- Each asset directory must be named with the full 64-hex-character asset hash and must contain `info.json` with non-empty `hash`, `name`, `ticker` (max 5 chars per README), `description`; `website`, `telegram`, `discord`, `twitter` are optional URLs (placeholders `https://`, `https://t.me/`, `https://discord.com/`, `https://x.com/` respectively). The `hash` field equals the directory name.
 - Asset hashes must match the on-chain asset registration. The hash is a 32-byte value (64 hex chars), inherited from `GenericHash` per `core/defi/src/shared/src/defi/token/asset.hpp`.
 - Asset hashes must be registered with the team on Discord before adding. Do not invent hashes.
 - CI hard-fails the deploy if any `data/assets/*/` directory is missing `info.json`, has invalid JSON, or is missing a required field. See `validate_asset` in `.github/workflows/deploy.yml`.
@@ -109,7 +110,7 @@ CNAME                      # data.warthog.network (do not delete or rename)
 - `addresses.json` → `{"addresses": [{"address":..., "tag":...}, ...]}`
 - `sha256t-hashrates.json`, `verushash2_2-hashrates.json` → flat array `[{manufacturer, model, hashrate_mh_s}, ...]`
 - `assets.json` → `[{hash, name, ticker}, ...]`
-- `assets/<hash>/info.json` → `{name, ticker, description, url?}`
+- `assets/<hash>/info.json` → `{hash, name, ticker, description, website?, telegram?, discord?, twitter?}`
 
 These shapes are set by the Python in `deploy.yml`; if you change them, update the script and any consumers in lockstep.
 

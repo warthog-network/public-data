@@ -34,7 +34,7 @@ Once deployed, the following JSON endpoints are available:
 | `/sha256t-hashrates.json` | GPU hashrates for Janushash |
 | `/verushash2_2-hashrates.json` | CPU hashrates for Janushash |
 | `/assets.json` | List of all assets with hash, name, ticker for autocompletion |
-| `/assets/{hash}/info.json` | Asset metadata (name, ticker, description, url) |
+| `/assets/{hash}/info.json` | Asset metadata (hash, name, ticker, description, website?, telegram?, discord?, twitter?) |
 
 ### Example Response
 
@@ -48,10 +48,14 @@ Once deployed, the following JSON endpoints are available:
 **GET /assets/0000000000000000000000000000000000000000000000000000000000000000/info.json**
 ```json
 {
-  "name": "WART",
+  "hash": "0000000000000000000000000000000000000000000000000000000000000000",
   "ticker": "WART",
+  "name": "WART",
   "description": "WART is the native token in the Warthog ecosystem. Fees are paid in it and every asset is traded against WART.",
-  "url": "https://warthog.network"
+  "website": "https://warthog.network",
+  "telegram": "https://t.me/warthognetwork",
+  "discord": "https://discord.com/invite/QMDV8bGTdQ",
+  "twitter": "https://x.com/warthognetwork"
 }
 ```
 
@@ -88,14 +92,26 @@ Once registered, you can add your token info:
 3. Add `info.json` with the following structure:
    ```json
    {
-       "name": "Asset Long Name",
+       "hash": "0000000000000000000000000000000000000000000000000000000000000000",
        "ticker": "TICK",
-       "description": "Description of the asset."
+       "name": "Asset Long Name",
+       "description": "Description of the asset.",
+       "website": "https://...",
+       "telegram": "https://t.me/...",
+       "discord": "https://discord.com/...",
+       "twitter": "https://x.com/..."
    }
    ```
+   - `hash`: 64-char hex asset hash (required, must equal the directory name)
+   - `ticker`: Short ticker symbol (required, max 5 characters, comes from the
+     on-chain `AssetName` field — see
+     `core/defi/src/shared/src/defi/token/asset.hpp`)
    - `name`: Long name (required)
-   - `ticker`: Short ticker symbol (required, max 5 characters)
    - `description`: Asset description (required)
-   - `url`: Website URL (optional)
-4. Optionally add `image.png` (valid PNG file)
+   - `website`: Project website URL (optional, placeholder `https://`)
+   - `telegram`: Telegram URL (optional, placeholder `https://t.me/`)
+   - `discord`: Discord URL (optional, placeholder `https://discord.com/`)
+   - `twitter`: X / Twitter URL (optional, placeholder `https://x.com/`)
+4. Optionally add `logo.<ext>` (PNG or JPG, exactly 250x250 px) and
+   `banner.<ext>` (PNG or JPG, exactly 600x200 px)
 5. Submit a PR to `master`
