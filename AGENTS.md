@@ -4,7 +4,7 @@ Static public-data repo for the Warthog network, served at `data.warthog.network
 
 ## What this repo is
 
-`master` holds source CSVs + an `index.html` + a `CNAME`. Every push to `master` triggers `.github/workflows/deploy.yml`, which validates assets, converts CSVs to JSON, and force-pushes the result to the `gh-pages` branch.
+`master` holds source CSVs + an `index.html` + a `CNAME`. Every push to `master` triggers `.github/workflows/deploy.yml`, which converts CSVs to JSON, and force-pushes the result to the `gh-pages` branch.
 
 **Never edit generated `*.json` files or the `gh-pages` branch directly** — they are overwritten by CI. Edit the CSVs in `data/` and open a PR against `master`.
 
@@ -19,8 +19,6 @@ The JSON served from `data.warthog.network` is the **canonical source of truth**
 | `addresses.json` | `data/addresses.csv` | `{"addresses": [{"address", "tag"}, ...]}` |
 | `sha256t-hashrates.json` | `data/sha256t-hashrates.csv` | `[{manufacturer, model, hashrate_mh_s}, ...]` |
 | `verushash2_2-hashrates.json` | `data/verushash2_2-hashrates.csv` | `[{manufacturer, model, hashrate_mh_s}, ...]` |
-| `assets.json` | `data/assets/` directories | `[{hash, name, ticker}, ...]` |
-| `assets/<hash>/info.json` | `data/assets/<hash>/info.json` | `{hash, name, ticker, description, website?, telegram?, discord?, twitter?}` |
 
 The endpoint list is mirrored in HUB.md — if you add/remove an endpoint, update both.
 
@@ -78,10 +76,6 @@ data/
   addresses.csv            # WART address tags
   sha256t-hashrates.csv    # GPU hashrates for Janushash
   verushash2_2-hashrates.csv # CPU hashrates for Janushash
-  assets/<64-hex-hash>/
-    info.json              # required: hash, name, ticker, description; optional: website, telegram, discord, twitter
-    logo.<ext>            # optional, image/png or image/jpeg, exactly 250x250 px
-    banner.<ext>          # optional, image/png or image/jpeg, exactly 600x200 px
 index.html                 # landing page + Janushash calculator
 CNAME                      # data.warthog.network (do not delete or rename)
 .github/workflows/deploy.yml
@@ -97,20 +91,11 @@ CNAME                      # data.warthog.network (do not delete or rename)
 - The `comment` column is stripped on conversion, so use it freely for maintainer notes (e.g. `Dead 1`). It does not affect the API output and there is no convention for filtering on it.
 - Trim whitespace; do not leave stray quotes.
 
-## Assets
-
-- Each asset directory must be named with the full 64-hex-character asset hash and must contain `info.json` with non-empty `hash`, `name`, `ticker` (max 5 chars per README), `description`; `website`, `telegram`, `discord`, `twitter` are optional URLs (placeholders `https://`, `https://t.me/`, `https://discord.com/`, `https://x.com/` respectively). The `hash` field equals the directory name.
-- Asset hashes must match the on-chain asset registration. The hash is a 32-byte value (64 hex chars), inherited from `GenericHash` per `core/defi/src/shared/src/defi/token/asset.hpp`.
-- Asset hashes must be registered with the team on Discord before adding. Do not invent hashes.
-- CI hard-fails the deploy if any `data/assets/*/` directory is missing `info.json`, has invalid JSON, or is missing a required field. See `validate_asset` in `.github/workflows/deploy.yml`.
-
 ## Generated JSON shapes (for reference)
 
 - `legacy-nodes.json`, `defi-nodes.json` → `{"nodes": [{"url":..., "name":...}, ...]}`
 - `addresses.json` → `{"addresses": [{"address":..., "tag":...}, ...]}`
 - `sha256t-hashrates.json`, `verushash2_2-hashrates.json` → flat array `[{manufacturer, model, hashrate_mh_s}, ...]`
-- `assets.json` → `[{hash, name, ticker}, ...]`
-- `assets/<hash>/info.json` → `{hash, name, ticker, description, website?, telegram?, discord?, twitter?}`
 
 These shapes are set by the Python in `deploy.yml`; if you change them, update the script and any consumers in lockstep.
 
@@ -142,11 +127,10 @@ python3 -c "import csv,json; [print(json.dumps(list(csv.DictReader(open('data/sh
 ## PR / deploy flow
 
 - Branch from and target `master`. Push to `master` triggers `.github/workflows/deploy.yml`, which:
-  1. validates every `data/assets/*/info.json`,
-  2. converts the five CSVs to JSON,
-  3. force-pushes `index.html`, `CNAME`, the JSON outputs, and `assets/` to `gh-pages`.
+  1. converts the five CSVs to JSON,
+  2. force-pushes `index.html`, `CNAME`, and the JSON outputs to `gh-pages`.
 - No release process, no versioning, no package manager.
-- Discussion / new-asset registration: Discord `https://discord.com/invite/QMDV8bGTdQ`.
+- Discussion: Discord `https://discord.com/invite/QMDV8bGTdQ`.
 
 ## Janusscore formula
 
