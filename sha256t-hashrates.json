@@ -1,0 +1,447 @@
+[
+  {
+    "manufacturer": "AMD",
+    "model": "6800 XT (TUF)",
+    "hashrate_mh_s": 1400.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "RX 550",
+    "hashrate_mh_s": 79.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "RX 5700 XT",
+    "hashrate_mh_s": 617.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "RX 580",
+    "hashrate_mh_s": 517.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "RX 580",
+    "hashrate_mh_s": 535.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "RX 6600 XT",
+    "hashrate_mh_s": 1000.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "RX 7800 XT",
+    "hashrate_mh_s": 2200.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Radeon 780M",
+    "hashrate_mh_s": 308.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Arc A770 BiFrost",
+    "hashrate_mh_s": 1600.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Arc A770 BiFrost",
+    "hashrate_mh_s": 1900.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Arc A770 LE",
+    "hashrate_mh_s": 1600.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX A2000",
+    "hashrate_mh_s": 650.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX A5000 (2x)",
+    "hashrate_mh_s": 3400.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "CMP 70HX",
+    "hashrate_mh_s": 800.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "CMP 90HX (2x)",
+    "hashrate_mh_s": 3600.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "GTX 1060",
+    "hashrate_mh_s": 347.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "GTX 1080",
+    "hashrate_mh_s": 700.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "GTX 1650",
+    "hashrate_mh_s": 320.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "GTX 1660 Super",
+    "hashrate_mh_s": 504.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "GTX 1660 Ti Max-Q",
+    "hashrate_mh_s": 450.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "GTX 1660 Ti",
+    "hashrate_mh_s": 450.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "GTX 1660 super",
+    "hashrate_mh_s": 507.5
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "Quadro M2000M",
+    "hashrate_mh_s": 111.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "Quadro P6 (2x)",
+    "hashrate_mh_s": 780.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "Quadro RTX4000",
+    "hashrate_mh_s": 831.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 2060",
+    "hashrate_mh_s": 642.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 2060",
+    "hashrate_mh_s": 650.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 2060 Super",
+    "hashrate_mh_s": 825.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 2080 Super",
+    "hashrate_mh_s": 1200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 2080 Super",
+    "hashrate_mh_s": 1500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 (3x)",
+    "hashrate_mh_s": 2750.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti (2x)",
+    "hashrate_mh_s": 1489.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti (2x)",
+    "hashrate_mh_s": 1785.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti (2x)",
+    "hashrate_mh_s": 1934.4
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti (2x)",
+    "hashrate_mh_s": 2500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti (ASUS Dual Mini)",
+    "hashrate_mh_s": 915.2
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti Dual OC (ASUS)",
+    "hashrate_mh_s": 1200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti",
+    "hashrate_mh_s": 1200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti",
+    "hashrate_mh_s": 1300.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 Ti",
+    "hashrate_mh_s": 1400.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 XC (EVGA)",
+    "hashrate_mh_s": 775.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 XC (EVGA)",
+    "hashrate_mh_s": 892.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060 XC (EVGA)",
+    "hashrate_mh_s": 900.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060",
+    "hashrate_mh_s": 681.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060",
+    "hashrate_mh_s": 840.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3060",
+    "hashrate_mh_s": 950.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070 (2x)",
+    "hashrate_mh_s": 3000.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070 (3x)",
+    "hashrate_mh_s": 4500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070 (4x)",
+    "hashrate_mh_s": 5200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070 (MSI GAMING X TRIO)",
+    "hashrate_mh_s": 420.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070 Ti (2x)",
+    "hashrate_mh_s": 3200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070 Ti",
+    "hashrate_mh_s": 1500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070",
+    "hashrate_mh_s": 1300.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3070",
+    "hashrate_mh_s": 1500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3080 (2x)",
+    "hashrate_mh_s": 4400.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3080 (2x)",
+    "hashrate_mh_s": 5000.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3080 (Xtreme Waterforce)",
+    "hashrate_mh_s": 1500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3080 Ti",
+    "hashrate_mh_s": 2500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3080",
+    "hashrate_mh_s": 1600.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3080",
+    "hashrate_mh_s": 1900.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3080",
+    "hashrate_mh_s": 2200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3090 (2x)",
+    "hashrate_mh_s": 2600.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3090 (5x)",
+    "hashrate_mh_s": 5900.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3090 Ti",
+    "hashrate_mh_s": 2800.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3090",
+    "hashrate_mh_s": 2100.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 3090",
+    "hashrate_mh_s": 2600.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4000 SFF Ada",
+    "hashrate_mh_s": 1300.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4060",
+    "hashrate_mh_s": 1100.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4060 Ti (2x)",
+    "hashrate_mh_s": 3000.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4060 Ti",
+    "hashrate_mh_s": 1500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070",
+    "hashrate_mh_s": 2000.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070 Super",
+    "hashrate_mh_s": 2200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070 Super",
+    "hashrate_mh_s": 2500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070 Super (2x)",
+    "hashrate_mh_s": 5400.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070 Ti",
+    "hashrate_mh_s": 2800.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070 Ti",
+    "hashrate_mh_s": 3000.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070 Ti",
+    "hashrate_mh_s": 3200.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4070 Ti (2x)",
+    "hashrate_mh_s": 5600.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4080 (2x)",
+    "hashrate_mh_s": 7000.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4080 Super",
+    "hashrate_mh_s": 3700.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4080 Super",
+    "hashrate_mh_s": 3800.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4080",
+    "hashrate_mh_s": 3500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4080",
+    "hashrate_mh_s": 3800.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4090",
+    "hashrate_mh_s": 4100.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4090",
+    "hashrate_mh_s": 4600.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4090",
+    "hashrate_mh_s": 4700.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4090",
+    "hashrate_mh_s": 5000.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4090",
+    "hashrate_mh_s": 5500.0
+  },
+  {
+    "manufacturer": "Nvidia",
+    "model": "RTX 4090",
+    "hashrate_mh_s": 6100.0
+  }
+]

@@ -1,0 +1,652 @@
+[
+  {
+    "manufacturer": "AMD",
+    "model": "EPYC 7K62 (48/96)",
+    "hashrate_mh_s": 90.6
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 7532",
+    "hashrate_mh_s": 50.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 7642 (2x)",
+    "hashrate_mh_s": 120.13
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 7742 (2x)",
+    "hashrate_mh_s": 123.11
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 7742",
+    "hashrate_mh_s": 82.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 7742",
+    "hashrate_mh_s": 92.8
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 7K62",
+    "hashrate_mh_s": 83.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 7V12",
+    "hashrate_mh_s": 97.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Epyc 9654",
+    "hashrate_mh_s": 184.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 1600",
+    "hashrate_mh_s": 8.71
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 1600",
+    "hashrate_mh_s": 10.3
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 1600",
+    "hashrate_mh_s": 6.3
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 1600X",
+    "hashrate_mh_s": 9.2
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 2600",
+    "hashrate_mh_s": 13.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 2600",
+    "hashrate_mh_s": 13.3
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 3600",
+    "hashrate_mh_s": 12.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 5500",
+    "hashrate_mh_s": 12.43
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 5600X",
+    "hashrate_mh_s": 10.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 5600X",
+    "hashrate_mh_s": 13.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 5 5800",
+    "hashrate_mh_s": 23.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 3700X",
+    "hashrate_mh_s": 18.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 4800H",
+    "hashrate_mh_s": 18.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 5700",
+    "hashrate_mh_s": 21.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 5700",
+    "hashrate_mh_s": 21.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 5800X",
+    "hashrate_mh_s": 18.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 5800X",
+    "hashrate_mh_s": 19.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 7700",
+    "hashrate_mh_s": 26.7
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 7800X3D",
+    "hashrate_mh_s": 15.88
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 7800X3D",
+    "hashrate_mh_s": 16.3
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 8845HS",
+    "hashrate_mh_s": 15.8
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 7 9700X",
+    "hashrate_mh_s": 26.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 21.45
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 23.12
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 23.6
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 24.04
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 24.4
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 24.56
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 24.7
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900X",
+    "hashrate_mh_s": 25.6
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3900XT",
+    "hashrate_mh_s": 24.6
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3950X",
+    "hashrate_mh_s": 28.1
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3950X",
+    "hashrate_mh_s": 30.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3950X",
+    "hashrate_mh_s": 36.8
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3950X",
+    "hashrate_mh_s": 36.8
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 3950X",
+    "hashrate_mh_s": 39.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5900X",
+    "hashrate_mh_s": 26.58
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5900X",
+    "hashrate_mh_s": 28.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5900X",
+    "hashrate_mh_s": 28.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5900X",
+    "hashrate_mh_s": 30.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5900X",
+    "hashrate_mh_s": 32.4
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5950X",
+    "hashrate_mh_s": 36.35
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5950X",
+    "hashrate_mh_s": 37.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5950X",
+    "hashrate_mh_s": 37.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5950X",
+    "hashrate_mh_s": 38.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5950X",
+    "hashrate_mh_s": 39.04
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5950X",
+    "hashrate_mh_s": 39.4
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 5950X",
+    "hashrate_mh_s": 40.62
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7900X",
+    "hashrate_mh_s": 27.29
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7900X3D",
+    "hashrate_mh_s": 34.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 36.76
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 37.01
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 43.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 43.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 44.63
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 45.9
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 46.8
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 46.96
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 47.46
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 48.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 49.4
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 49.59
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 50.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 51.5
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X",
+    "hashrate_mh_s": 53.4
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X3D",
+    "hashrate_mh_s": 45.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen 9 7950X3D",
+    "hashrate_mh_s": 47.0
+  },
+  {
+    "manufacturer": "AMD",
+    "model": "Ryzen Threadripper 2950X",
+    "hashrate_mh_s": 30.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-12400F",
+    "hashrate_mh_s": 14.6
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-13500",
+    "hashrate_mh_s": 18.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-13600K",
+    "hashrate_mh_s": 30.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-10300H",
+    "hashrate_mh_s": 6.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-10400",
+    "hashrate_mh_s": 12.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-10400",
+    "hashrate_mh_s": 9.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-11600",
+    "hashrate_mh_s": 13.9
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-12400",
+    "hashrate_mh_s": 13.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-9600K",
+    "hashrate_mh_s": 5.49
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-9600K",
+    "hashrate_mh_s": 6.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i5-9600K",
+    "hashrate_mh_s": 7.4
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-10700",
+    "hashrate_mh_s": 18.7
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-10700F",
+    "hashrate_mh_s": 15.3
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-10700F",
+    "hashrate_mh_s": 16.1
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-10700F",
+    "hashrate_mh_s": 16.1
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-12600",
+    "hashrate_mh_s": 21.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-12600",
+    "hashrate_mh_s": 23.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-14700F",
+    "hashrate_mh_s": 34.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-6820HQ",
+    "hashrate_mh_s": 4.76
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i7-8700K",
+    "hashrate_mh_s": 8.4
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i9-12900K",
+    "hashrate_mh_s": 26.09
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Core i9-12900K",
+    "hashrate_mh_s": 28.14
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "E5-2697v2 (2x)",
+    "hashrate_mh_s": 25.58
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon 6252N (2x)",
+    "hashrate_mh_s": 60.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2630v4",
+    "hashrate_mh_s": 11.24
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2666",
+    "hashrate_mh_s": 14.98
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2670 (2x)",
+    "hashrate_mh_s": 30.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2670",
+    "hashrate_mh_s": 10.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2673v4 (2x)",
+    "hashrate_mh_s": 47.8
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2680 (2x)",
+    "hashrate_mh_s": 33.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2680 (2x)",
+    "hashrate_mh_s": 37.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2680 (2x)",
+    "hashrate_mh_s": 38.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2680 (2x)",
+    "hashrate_mh_s": 40.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2680",
+    "hashrate_mh_s": 20.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2682 (2x)",
+    "hashrate_mh_s": 28.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2682 (2x)",
+    "hashrate_mh_s": 46.2
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2683 (2x)",
+    "hashrate_mh_s": 42.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2683",
+    "hashrate_mh_s": 25.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2684 (2x)",
+    "hashrate_mh_s": 45.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2686 (2x)",
+    "hashrate_mh_s": 42.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2686",
+    "hashrate_mh_s": 24.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2690 (2x)",
+    "hashrate_mh_s": 45.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2690",
+    "hashrate_mh_s": 22.4
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2695",
+    "hashrate_mh_s": 23.3
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2696 (2x)",
+    "hashrate_mh_s": 48.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2696 (HT/off) (2x)",
+    "hashrate_mh_s": 34.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2696",
+    "hashrate_mh_s": 20.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2696",
+    "hashrate_mh_s": 24.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2697 (2x)",
+    "hashrate_mh_s": 50.5
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2697",
+    "hashrate_mh_s": 25.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2698",
+    "hashrate_mh_s": 26.4
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2699 (2x)",
+    "hashrate_mh_s": 45.0
+  },
+  {
+    "manufacturer": "Intel",
+    "model": "Xeon E5-2699 (2x)",
+    "hashrate_mh_s": 60.0
+  }
+]
